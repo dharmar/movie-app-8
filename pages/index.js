@@ -3,7 +3,8 @@ import Header from '../components/Header'
 import Navbar from '../components/Navbar'
 import Results from '../components/Results'
 
-export default function Home() {
+export default function Home({ results }) {
+  console.log(results)
   return (
     <div>
       <Head>
@@ -13,12 +14,15 @@ export default function Home() {
       </Head>
 
       {/* Header */}
+
       <Header />
 
       {/* Navbar */}
+
       <Navbar />
 
-      {/* results */}
+      {/* Results */}
+
       <Results />
     </div>
   )
